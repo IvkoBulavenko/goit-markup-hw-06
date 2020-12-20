@@ -784,13 +784,11 @@ nav a,
   color: var(--title-text-color);
 }
 
-/* Form ============================= */
-/* Form items =========================================== */
 .form-items {
   margin-left: auto;
   margin-right: auto;
 }
-/* Form item */
+
 .form-item {
   position: relative;
   margin-bottom: 10px;
@@ -805,11 +803,11 @@ nav a,
   line-height: 14px;
   letter-spacing: 0.01em;
 
-  color: rgb(117, 117, 117);
+  color: rgb(117, 117, 117, 1);
 
   margin-bottom: 4px;
 }
-/* Form Inputs  ========================== */
+
 .form-item-input {
   display: block;
   z-index: 1;
@@ -830,7 +828,6 @@ nav a,
   border-color: var(--accent-color);
 }
 
-/* Inputs icons ================================= */
 .form-item-input:focus + .form-item-input-svg,
 .form-item-input:hover + .form-item-input-svg {
   fill: var(--accent-color);
@@ -845,7 +842,7 @@ nav a,
   width: 18px;
   height: 18px;
 }
-/* Form message ========================================== */
+
 .form-message {
   font-family: Roboto;
   font-style: normal;
@@ -864,7 +861,6 @@ nav a,
   margin-bottom: 20px;
 }
 
-/* Form Agreements  ==============================*/
 .form-agreement-label {
   display: flex;
   align-items: center;
@@ -893,8 +889,6 @@ nav a,
   margin-left: 3px;
 }
 
-/* Form castom-checkbox  */
-
 .form-castom-checkbox {
   margin-right: 7px;
   width: 16px;
@@ -921,7 +915,6 @@ nav a,
   display: none;
 }
 
-/* Form button */
 .form-button {
   background-color: rgb(33, 150, 243);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -929,6 +922,7 @@ nav a,
   font-weight: bold;
   font-size: 16px;
   color: rgb(255, 255, 255);
+  border: none;
 
   width: 200px;
   height: 50px;
@@ -940,4 +934,8 @@ nav a,
   margin-right: auto;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-message::placeholder {
+  color: rgba(117, 117, 117, 0.5);
 }
